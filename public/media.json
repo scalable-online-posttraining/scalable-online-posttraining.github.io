@@ -1,0 +1,156 @@
+[
+  {
+    "original": "assets/videos/EN_small.mp4",
+    "src": "assets/videos/EN_small.mp4",
+    "poster": "assets/posters/EN_small.jpg",
+    "duration": 212.01,
+    "kind": "mp4"
+  },
+  {
+    "original": "assets/videos/GIF1_small.mp4",
+    "src": "assets/videos/GIF1_small.mp4",
+    "poster": "assets/posters/GIF1_small.jpg",
+    "duration": 40.77,
+    "kind": "mp4"
+  },
+  {
+    "original": "assets/videos/GIF2_small.mp4",
+    "src": "assets/videos/GIF2_small.mp4",
+    "poster": "assets/posters/GIF2_small.jpg",
+    "duration": 9.4,
+    "kind": "mp4"
+  },
+  {
+    "original": "assets/videos/common/closeup_fold_cloth_real.mp4",
+    "src": "assets/videos/closeup_fold_cloth_real.mp4",
+    "poster": "assets/posters/closeup_fold_cloth_real.jpg",
+    "duration": 37.12,
+    "kind": "mp4"
+  },
+  {
+    "original": "assets/videos/common/closeup_freezer.mp4",
+    "src": "assets/videos/closeup_freezer.mp4",
+    "poster": "assets/posters/closeup_freezer.jpg",
+    "duration": 39.64,
+    "kind": "mp4"
+  },
+  {
+    "original": "assets/videos/common/closeup_shelf_restock_bottle.mp4",
+    "src": "assets/videos/closeup_shelf_restock_bottle.mp4",
+    "poster": "assets/posters/closeup_shelf_restock_bottle.jpg",
+    "duration": 23.56,
+    "kind": "mp4"
+  },
+  {
+    "original": "assets/videos/common/front_display_cooler.mp4",
+    "src": "assets/videos/front_display_cooler.mp4",
+    "poster": "assets/posters/front_display_cooler.jpg",
+    "duration": 43.76,
+    "kind": "mp4"
+  },
+  {
+    "original": "assets/videos/common/front_fold_cloth_real.mp4",
+    "src": "assets/videos/front_fold_cloth_real.mp4",
+    "poster": "assets/posters/front_fold_cloth_real.jpg",
+    "duration": 108.68,
+    "kind": "mp4"
+  },
+  {
+    "original": "assets/videos/common/front_restock.mp4",
+    "src": "assets/videos/front_restock.mp4",
+    "poster": "assets/posters/front_restock.jpg",
+    "duration": 49.32,
+    "kind": "mp4"
+  },
+  {
+    "original": "assets/videos/common/top_box_assembly.mp4",
+    "src": "assets/videos/top_box_assembly.mp4",
+    "poster": "assets/posters/top_box_assembly.jpg",
+    "duration": 408.96,
+    "kind": "mp4"
+  },
+  {
+    "original": "assets/videos/common/top_display_cooler.mp4",
+    "src": "assets/videos/top_display_cooler.mp4",
+    "poster": "assets/posters/top_display_cooler.jpg",
+    "duration": 72.96000000000001,
+    "kind": "mp4"
+  },
+  {
+    "original": "assets/videos/common/top_fold_cloth_real.mp4",
+    "src": "assets/videos/top_fold_cloth_real.mp4",
+    "poster": "assets/posters/top_fold_cloth_real.jpg",
+    "duration": 39.84,
+    "kind": "mp4"
+  },
+  {
+    "original": "assets/videos/common/top_freezer.mp4",
+    "src": "assets/videos/top_freezer.mp4",
+    "poster": "assets/posters/top_freezer.jpg",
+    "duration": 38.88,
+    "kind": "mp4"
+  },
+  {
+    "original": "assets/videos/common/top_restock.mp4",
+    "src": "assets/videos/top_restock.mp4",
+    "poster": "assets/posters/top_restock.jpg",
+    "duration": 50.88,
+    "kind": "mp4"
+  },
+  {
+    "original": "assets/videos/common/top_shelf_restock_bottle.mp4",
+    "src": "assets/videos/top_shelf_restock_bottle.mp4",
+    "poster": "assets/posters/top_shelf_restock_bottle.jpg",
+    "duration": 24.0,
+    "kind": "mp4"
+  },
+  {
+    "original": "assets/videos/perturbations/box_assembly_1_no_audio.mp4",
+    "src": "assets/videos/box_assembly_1_no_audio.mp4",
+    "poster": "assets/posters/box_assembly_1_no_audio.jpg",
+    "duration": 158.4,
+    "kind": "mp4"
+  },
+  {
+    "original": "assets/videos/perturbations/fold_cloth_1_no_audio.mp4",
+    "src": "assets/videos/fold_cloth_1_no_audio.mp4",
+    "poster": "assets/posters/fold_cloth_1_no_audio.jpg",
+    "duration": 323.4,
+    "kind": "mp4"
+  },
+  {
+    "original": "assets/videos/perturbations/fold_cloth_2_no_audio.mp4",
+    "src": "assets/videos/fold_cloth_2_no_audio.mp4",
+    "poster": "assets/posters/fold_cloth_2_no_audio.jpg",
+    "duration": 155.24,
+    "kind": "mp4"
+  },
+  {
+    "original": "assets/videos/perturbations/fold_cloth_3_no_audio.mp4",
+    "src": "assets/videos/fold_cloth_3_no_audio.mp4",
+    "poster": "assets/posters/fold_cloth_3_no_audio.jpg",
+    "duration": 86.76,
+    "kind": "mp4"
+  },
+  {
+    "original": "assets/videos/perturbations/fold_cloth_4_no_audio.mp4",
+    "src": "assets/videos/fold_cloth_4_no_audio.mp4",
+    "poster": "assets/posters/fold_cloth_4_no_audio.jpg",
+    "duration": 41.8,
+    "kind": "mp4"
+  },
+  {
+    "original": "assets/videos/timelapses/36h_box_assembly.mp4",
+    "src": "assets/hls/36h_box_assembly/index.m3u8",
+    "poster": "assets/posters/36h_box_assembly.jpg",
+    "duration": 2424.91,
+    "kind": "hls"
+  },
+  {
+    "original": "assets/videos/timelapses/36h_laundary_folding.mp4",
+    "src": "assets/hls/36h_laundry_folding/index.m3u8",
+    "poster": "assets/posters/36h_laundry_folding.jpg",
+    "duration": 2419.43,
+    "kind": "hls"
+  }
+]

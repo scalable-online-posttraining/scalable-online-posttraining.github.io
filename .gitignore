@@ -1,0 +1,5 @@
+original/
+.tools/
+.qa/
+.DS_Store
+__pycache__/
