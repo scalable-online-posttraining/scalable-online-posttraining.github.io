@@ -1,14 +1,12 @@
 # SOP research website
 
-Planned publication: https://scalable-online-posttraining.github.io/
-
-Status: the previous project site has been withdrawn. The independent site is prepared but not yet deployed; it is awaiting creation of the `scalable-online-posttraining` GitHub organization under `tauteamhq`.
+Website: https://scalable-online-posttraining.github.io/
 
 The `public/` directory is a self-contained static website. Its typography and layout follow the LWD, τ0-WM, and τ0-VLA research pages. It includes the original paper, three research figures, and 22 full-length videos. Two long timelapses use local HLS segments. No external font or video service is required.
 
-## Domain migration
+## Hosting
 
-The target repository is `scalable-online-posttraining/scalable-online-posttraining.github.io`, managed by `tauteamhq`. After creating the organization, transfer and rename the existing `tauteamhq/sop` repository to the target, update the local remote, enable GitHub Pages with GitHub Actions, re-enable the publishing workflow, and deploy the verified source. This preserves the existing media and commit history. The previous Pages publication and automatic publishing remain disabled until the migration is ready.
+The repository is `scalable-online-posttraining/scalable-online-posttraining.github.io`, in the GitHub organization managed by `tauteamhq`. GitHub Pages publishes the site at the organization domain root using GitHub Actions. The repository was transferred with all media and commit history preserved; the previous publication at `tauteamhq.github.io/sop/` was withdrawn.
 
 ## Validation and deployment
 
