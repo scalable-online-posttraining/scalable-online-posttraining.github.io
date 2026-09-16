@@ -1,4 +1,4 @@
-"""Create complete, size-bounded web media from the local original archive."""
+"""Create size-bounded web media, applying the requested overview cutoff."""
 from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 import json
@@ -20,6 +20,9 @@ def prepare(source):
     probe = subprocess.run([str(FFMPEG), '-hide_banner', '-i', str(source)], capture_output=True, text=True).stderr
     match = re.search(r'Duration: (\d+):(\d+):([\d.]+)', probe)
     duration = int(match[1]) * 3600 + int(match[2]) * 60 + float(match[3])
+    is_overview = source.stem == 'EN_small'
+    if is_overview:
+        duration = min(duration, 202.0)
     poster = PUBLIC / 'assets/posters' / f'{name}.jpg'
     run(['-ss', str(min(5, duration / 3)), '-i', str(source), '-frames:v', '1', '-vf', 'scale=960:-2', '-q:v', '3', str(poster)])
     is_long = source.parent.name == 'timelapses'
@@ -32,8 +35,10 @@ def prepare(source):
         common[common.index('-b:a') + 1] = '64k'
         run([*common, '-force_key_frames', 'expr:gte(t,n_forced*6)', '-hls_time', '6', '-hls_playlist_type', 'vod', '-hls_flags', 'independent_segments', '-hls_segment_filename', str(output.parent / 'part-%04d.ts'), str(output)])
     else:
-        output = PUBLIC / 'assets/videos' / f'{name}.mp4'
-        run([*common, '-movflags', '+faststart', str(output)])
+        filename = 'sop-overview-202s.mp4' if is_overview else f'{name}.mp4'
+        output = PUBLIC / 'assets/videos' / filename
+        trim = ['-t', '202'] if is_overview else []
+        run([*common, *trim, '-movflags', '+faststart', str(output)])
     result = {'original': str(source.relative_to(ROOT / 'original')), 'src': str(output.relative_to(PUBLIC)), 'poster': str(poster.relative_to(PUBLIC)), 'duration': duration, 'kind': 'hls' if is_long else 'mp4'}
     print(f'Prepared {name}: {duration:.1f}s ({result["kind"]})', flush=True)
     return result

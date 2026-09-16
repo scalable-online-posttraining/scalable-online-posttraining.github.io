@@ -2,7 +2,7 @@
 
 Website: https://scalable-online-posttraining.github.io/
 
-The `public/` directory is a self-contained static website. Its typography and layout follow the LWD, τ0-WM, and τ0-VLA research pages. It includes the original paper, three research figures, and 22 full-length videos. Two long timelapses use local HLS segments. No external font or video service is required.
+The `public/` directory is a self-contained static website. Its typography and layout follow the LWD, τ0-WM, and τ0-VLA research pages. It includes the original paper, three research figures, and 22 videos. The main overview ends at 3:22, before the closing brand card; the other 21 videos retain their full duration. Two long timelapses use local HLS segments. No external font or video service is required.
 
 ## Hosting
 
@@ -16,7 +16,7 @@ Use `node scripts/serve-static.mjs public 4186` for a local server with video by
 
 ## Media maintenance
 
-The local `original/` directory contains the extracted archive and is excluded from Git. `scripts/prepare_media.py` creates the web video versions and posters without shortening or speeding up the content. It uses a local imageio-ffmpeg installation under `.tools/python/`. The supplied archive and original files are never overwritten. `scripts/prepare_page.py` documents the initial content conversion; normal website edits can be made directly to `public/index.html`, `public/style.css`, and `public/player.js`.
+The local `original/` directory contains the extracted archive and is excluded from Git. `scripts/prepare_media.py` creates the web video versions and posters, retaining the original playback speed and applying the requested 202-second cutoff to the main overview only. It uses a local imageio-ffmpeg installation under `.tools/python/`. The supplied archive and original files are never overwritten. `scripts/prepare_page.py` documents the initial content conversion; normal website edits can be made directly to `public/index.html`, `public/style.css`, and `public/player.js`.
 
 HLS.js 1.7.3 is bundled locally under its Apache-2.0 license in `public/vendor/`. Native HLS is used when the browser supports it; other compatible browsers use HLS.js after an explicit play request.
 

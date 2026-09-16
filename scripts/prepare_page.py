@@ -53,7 +53,8 @@ def video_card(src, css='media'):
     if long:
         player = f'<video {attrs} data-hls="assets/hls/{name}/index.m3u8"></video><button class="hls-play" type="button" aria-label="Play {title}"><svg viewBox="0 0 16 16" aria-hidden="true"><path fill="currentColor" d="M3 1.5v13L14 8z"/></svg>Play timelapse</button>'
     else:
-        player = f'<video {attrs}><source src="assets/videos/{name}.mp4" type="video/mp4">Your browser does not support HTML video.</video>'
+        filename = 'sop-overview-202s.mp4' if old_name == 'EN_small' else f'{name}.mp4'
+        player = f'<video {attrs}><source src="assets/videos/{filename}" type="video/mp4">Your browser does not support HTML video.</video>'
     caption = title + (f'<span class="caption-meta">{detail}</span>' if detail else '')
     if old_name == 'EN_small':
         player = player.replace('preload="none"', 'preload="metadata"')
