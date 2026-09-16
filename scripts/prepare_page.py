@@ -143,7 +143,7 @@ title = 'SOP: Scaling General-Purpose Robots in the Real World'
 document = f'''<!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>{title}</title><meta name="description" content="Scalable Online Post-training: continual learning across robot fleets, improving VLA policies through shared real-world experience.">
-<link rel="canonical" href="https://tauteamhq.github.io/sop/"><meta property="og:title" content="{title}"><meta property="og:description" content="Scalable Online Post-training for continual learning across robot fleets."><meta property="og:type" content="article"><meta property="og:url" content="https://tauteamhq.github.io/sop/">
+<link rel="canonical" href="https://scalable-online-posttraining.github.io/"><meta property="og:title" content="{title}"><meta property="og:description" content="Scalable Online Post-training for continual learning across robot fleets."><meta property="og:type" content="article"><meta property="og:url" content="https://scalable-online-posttraining.github.io/">
 <meta name="theme-color" content="#f9f6f0"><link rel="icon" href="favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="style.css">
 <link rel="preload" href="assets/fonts/Satoshi-Medium.ttf" as="font" type="font/ttf" crossorigin><link rel="preload" href="assets/fonts/DMSans-Regular.ttf" as="font" type="font/ttf" crossorigin>
 <script src="vendor/hls.min.js" defer></script><script src="player.js" defer></script></head>
